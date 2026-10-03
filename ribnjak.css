@@ -7,17 +7,12 @@ body {
     overflow-x: hidden;
     background: #f4efe7;
     color: #1b1b1b;
+    font-family: "IBM Plex Serif", serif;
 }
 
 img {
     max-width: 100%;
     display: block;
-}
-
-.niconne-regular {
-  font-family: "Niconne", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 header {
@@ -55,7 +50,7 @@ header > section {
     left: 6%;
     top: 32%;
     z-index: 2;
-    font-family: Ms Madi, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(3rem, 8vw, 7.5rem);
     color: white;
     margin: 0;
@@ -67,7 +62,7 @@ header > section {
     left: 6%;
     bottom: 4.5rem;
     z-index: 2;
-    font-family: Niconne, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(1.4rem, 1.8vw, 1.9rem);
     line-height: 1.35;
     color: white;
@@ -135,12 +130,6 @@ header > section {
     }
 }
 
-.ms-madi-regular {
-  font-family: "Ms Madi", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .gallery {
     display: flex;
     justify-content: center;
@@ -200,7 +189,7 @@ article {
 .lorr {
     flex: 1;
     width: auto;
-    font-family: Niconne, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     line-height: 1.4;
     margin: 0;
@@ -302,7 +291,7 @@ article {
 }
 
 .foody {
-    font-family: Ms Madi, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(3rem, 8vw, 7.5rem);
     color: black;
     margin: 0 auto;
@@ -314,7 +303,7 @@ article {
 }
 
 .jelka {
-    font-family: Niconne, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(1.4rem, 2vw, 2.2rem);
     line-height: 1.35;
     color: black;
@@ -366,7 +355,7 @@ article {
 
 
 .dete{
-    font-family: Niconne, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     line-height: 1.4;
     color: black;
@@ -377,7 +366,7 @@ article {
 }
 
 .nature{
-    font-family: Niconne, cursive;
+    font-family: "IBM Plex Serif", serif;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     line-height: 1.4;
     color:black;
@@ -429,7 +418,7 @@ article {
 
 .contact,
 .contact-br {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "IBM Plex Serif", serif;
     line-height: 1.4;
     position: relative;
     z-index: 2;
@@ -440,7 +429,7 @@ article {
 }
 
 .copyright {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "IBM Plex Serif", serif;
     position: relative;
     z-index: 2;
     margin: 1rem 0 0;
