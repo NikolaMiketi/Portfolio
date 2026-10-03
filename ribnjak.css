@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #f4efe7;
+    color: #1b1b1b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.niconne-regular {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    position: relative;
+    isolation: isolate;
+    height: 100vh;
+    height: 100svh;
+}
+
+header::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, transparent 35%, rgba(0, 0, 0, 0.58) 100%);
+    content: "";
+    pointer-events: none;
+}
+
+header > section {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 3;
+}
+
+.dii {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.h11 {
+    position: absolute;
+    left: 6%;
+    top: 32%;
+    z-index: 2;
+    font-family: Ms Madi, cursive;
+    font-size: clamp(3rem, 8vw, 7.5rem);
+    color: white;
+    margin: 0;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.convince {
+    position: absolute;
+    left: 6%;
+    bottom: 4.5rem;
+    z-index: 2;
+    font-family: Niconne, cursive;
+    font-size: clamp(1.4rem, 1.8vw, 1.9rem);
+    line-height: 1.35;
+    color: white;
+    text-align: left;
+    width: min(88%, 600px);
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.moove {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    list-style: none;
+    padding: 0.35rem;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(6px);
+}
+
+.moove li {
+    display: inline-block;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    text-align: center;
+    list-style: none;
+    transition: transform 0.2s ease;
+}
+
+.moove li:hover {
+    transform: translateY(-2px);
+}
+
+.moove a {
+    display: block;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.moove li:hover a {
+    color: white;
+    background: #315344;
+}
+
+.moove a:active {
+    transform: scale(0.95);
+    background: #244235;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.moove a:focus-visible {
+    outline: 3px solid #315344;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .moove li,
+    .moove a {
+        transition: none;
+    }
+}
+
+.ms-madi-regular {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    min-height: 280px;
+}
+
+.yum,
+.gg {
+    position: relative;
+    display: block;
+    width: clamp(150px, 26vw, 220px);
+    height: auto;
+    border: solid 13px white;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.yum {
+    left: 3.5rem;
+    z-index: 1;
+}
+
+.gg {
+    left: -3.5rem;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1em;
+}
+
+.vip {
+    width: min(100%, 450px);
+    height: auto;
+    flex: 0 1 450px;
+    border-radius: 14px;
+    border: solid 10px white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.lorr {
+    flex: 1;
+    width: auto;
+    font-family: Niconne, cursive;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+
+.menu-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-container li {
+    font-size: clamp(1.5rem, 2.8vw, 2.8rem);
+}
+
+@media (max-width: 820px) {
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vip {
+        width: min(100%, 500px);
+        align-self: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .h11 {
+        top: 36%;
+        left: 8%;
+    }
+
+    .convince {
+        left: 8%;
+        bottom: 3rem;
+        font-size: 1.2rem;
+        width: 84%;
+    }
+
+    .gallery {
+        min-height: auto;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .yum,
+    .gg {
+        width: clamp(120px, 36vw, 180px);
+        border-width: 8px;
+    }
+
+    .yum {
+        left: 0;
+    }
+
+    .gg {
+        left: 0;
+    }
+
+    .moove {
+        gap: 0.15rem;
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .moove li {
+        font-size: 1.05rem;
+    }
+
+    .moove a {
+        padding: 0.55rem 0.7rem;
+    }
+
+    header > section {
+        top: 1rem;
+        right: 1rem;
+        left: 1rem;
+    }
+
+    article {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .lorr {
+        font-size: 1.5rem;
+    }
+}
+
+
+.me {
+    background: #fff;
+    max-width: 1100px;
+    margin: 5rem auto 0;
+    padding: 2.5rem 1rem 2rem;
+}
+
+.foody {
+    font-family: Ms Madi, cursive;
+    font-size: clamp(3rem, 8vw, 7.5rem);
+    color: black;
+    margin: 0 auto;
+    text-shadow: 0 3px 12px rgba(164, 162, 162, 0.915);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transform: translateY(1.8rem);
+}
+
+.jelka {
+    font-family: Niconne, cursive;
+    font-size: clamp(1.4rem, 2vw, 2.2rem);
+    line-height: 1.35;
+    color: black;
+    position: relative;
+    text-align: center;
+    width: min(90%, 700px);
+    margin: 0 auto;
+    padding: 3.6rem 1.5rem 1.2rem;
+    background: #fff;
+    border-radius: 18px;
+    z-index: 1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.food-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding: 0 1rem;
+}
+
+.edible,
+.ediblee,
+.edibleee {
+    width: min(30vw, 300px);
+    height: 450px;
+    object-fit: cover;
+    border: solid white 10px;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 680px) {
+    .food-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .edible,
+    .ediblee,
+    .edibleee {
+        width: min(80vw, 300px);
+    }
+}
+
+
+.dete{
+    font-family: Niconne, cursive;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    line-height: 1.4;
+    color: black;
+    text-align: center;
+    width: min(90%, 700px);
+    margin: 0 auto;
+    padding: 0 1rem 1.5rem;
+}
+
+.nature{
+    font-family: Niconne, cursive;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    line-height: 1.4;
+    color:black;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.cinjenica{
+    margin-top: 3rem;
+    padding: 2rem 1rem 1rem;
+    background: #ebe7df;
+    border-top: 2px solid rgba(27, 27, 27, 0.14);
+}
+
+.ending{
+    position: absolute;
+    inset: -4px;
+    z-index: 0;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    object-fit: cover;
+    filter: blur(2px) brightness(0.7);
+}
+
+.end {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    background: #111;
+}
+
+.end::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.42);
+    content: "";
+    pointer-events: none;
+}
+
+.contact,
+.contact-br {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: clamp(1rem, 1.6vw, 1.35rem);
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 2;
+    margin: 1rem 0 0;
+    color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    font-size: 0.85rem;
+}
